@@ -1,0 +1,103 @@
+svg {
+  height: 2rem;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1.5rem;
+}
+.container {
+  margin: 5rem 0 2rem 2rem;
+  width: 60%;
+  overflow-x: hidden;
+}
+.pinkCaps {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3988;
+  line-height: 1.1rem;
+  margin: 0;
+}
+.graphic {
+  height: 18rem;
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 11vh;
+  transform: translatex(50%);
+  opacity: 1.25;
+}
+.NFT {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.8rem;
+  line-height: 3rem;
+  margin: 1rem 0 1rem 0;
+}
+.textForm {
+  font-family: Arial, Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.btn {
+  margin-top: 1rem;
+  border: none;
+  display: inline-block;
+  border-radius: 99px;
+  color: black;
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  padding: 17px 35px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.btn:before,
+.btn:after {
+  content: " ";
+  position: absolute;
+  border-radius: 99px;
+}
+.btn:before {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+  background: url(/assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn:after {
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  background-color: white;
+  z-index: -1;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.btn:hover:after {
+  opacity: 0;
+  color: white;
+}
+.background {
+  background: url(assets/background.svg);
+  background-position: center;
+  position: absolute;
+  height: 20rem;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+h2 {
+}
